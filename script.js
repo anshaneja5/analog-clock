@@ -8,7 +8,7 @@ function setClock(){
     const currentDate=new Date();
     const secondsRatio=currentDate.getSeconds()/60;
     const minutesRatio=(secondsRatio+currentDate.getMinutes())/60;
-    const hoursRatio=(minutesRatio +currentDate.getHours())/60;
+    const hoursRatio=(minutesRatio +currentDate.getHours())/12;
 
     setRotation(hours,hoursRatio);
     setRotation(minutes,minutesRatio);
